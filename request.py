@@ -1,6 +1,6 @@
 import requests 
 import re
-import lxml #parser để dễ nhìn html
+import lxml #parser html
 
 url="https://courses.uit.edu.vn/login"
 s=requests.session()
@@ -24,13 +24,9 @@ headers={
     'Content-Length':'108',
     'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.193 Safari/537.36'
 }
-
 response=s.post("https://courses.uit.edu.vn/login/index.php",data=data,headers=headers)
-
 print(response.status_code)
-
 f = open('source.txt', mode='w', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)
-
 nd=str(response.content)
 f.write(nd)
 print(response.encoding)
