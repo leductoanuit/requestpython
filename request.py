@@ -10,8 +10,8 @@ logintoken.group()
 #print(logintoken[1])
 data={
     'logintoken':str(logintoken[1]),
-    'username':'17521322',
-    'password':'1930216623',
+    'username':'1752xxxx',
+    'password':'19xxxxxx',
     'rememberusername':'1'
     }
 
