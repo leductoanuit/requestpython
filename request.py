@@ -11,7 +11,7 @@ logintoken.group()
 data={
     'logintoken':str(logintoken[1]),
     'username':'1752xxxx',
-    'password':'19xxxxxx',
+    'password':'1930216',
     'rememberusername':'1'
     }
 
